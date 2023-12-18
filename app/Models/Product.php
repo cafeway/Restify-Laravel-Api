@@ -9,19 +9,19 @@ class Product extends Model
 {
     protected $fillable = ['name', 'description', 'price'];
 
-    public function categories()
-    {
-        return $this->belongsToMany(Category::class);
-    }
+    // public function categories()
+    // {
+    //     return $this->belongsToMany(Category::class);
+    // }
 
-    public function tags()
-    {
-        return $this->belongsToMany(Tag::class);
-    }
+    // public function tags()
+    // {
+    //     return $this->belongsToMany(Tag::class);
+    // }
 
-    public function variants()
-    {
-        return $this->hasMany(ProductVariant::class);
-    }
+    // public function variants()
+    // {
+    //     return $this->hasMany(ProductVariant::class);
+    // }
     use HasFactory;
 }
