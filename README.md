@@ -91,14 +91,14 @@ Enable users to share products on social media.
 Implement social media login options.
 Shipping Integration: -->
 
-Integrate with shipping providers for real-time shipping rates and tracking.
+<!-- Integrate with shipping providers for real-time shipping rates and tracking.
 
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Laravel is accessible, powerful, and provides tools required for large, robust applications. -->
 
-## Learning Laravel
+## Getting started
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+To run and consume the restful api locally clone the following repository [https://github.com/cafeway/Restify-Laravel-Api]
 
 If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
