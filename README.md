@@ -9,7 +9,7 @@
 
 ## RESTify Laravel API
 
-Welcome to my Laravel Restify API Hub project, a robust and developer-friendly RESTful API built on the Laravel framework using the powerful Restify package. This API serves as the backbone for seamless integration of your applications with a focus on simplicity, flexibility, and performances.
+Welcome to my Laravel Restify API Hub project, a robust and developer-friendly e-commerce RESTful API built on the Laravel framework using the powerful Restify package. This API serves as the backbone for seamless integration of your applications with a focus on simplicity, flexibility, and performances.
 
 - [Simple, fast routing engine](https://laravel.com/docs/routing).
 - [Powerful dependency injection container](https://laravel.com/docs/container).
