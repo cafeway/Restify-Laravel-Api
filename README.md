@@ -19,54 +19,43 @@ Welcome to my Laravel Restify API Hub project, a robust and developer-friendly e
 - [Robust background job processing](https://laravel.com/docs/queues).
 - [Real-time event broadcasting](https://laravel.com/docs/broadcasting). -->
 
--Product Management:
+## Key Features
+- Product Management:
     - Create, update, and delete products.
     - Retrieve a list of all products or specific product details.
     - Implement product categories and tags for better organization.
-Inventory Management:
-
-Track and manage product inventory levels.
-Set up notifications for low stock.
-Handle product variants, such as sizes and colors.
-Order Management:
-
-Allow users to place orders.
-Retrieve order details, including items, quantities, and prices.
-Update order status (e.g., processing, shipped, delivered).
-Provide order history for users.
-User Authentication and Authorization:
-
-Enable user registration and login.
-Implement secure authentication using Laravel Passport or a similar package.
-Authorize user actions based on roles and permissions.
-Shopping Cart:
-
-Allow users to add products to a shopping cart.
-Adjust quantities and remove items from the cart.
-Calculate the total price and handle discounts.
-Checkout Process:
-
-Provide a seamless and secure checkout process.
-Collect shipping and billing information.
-Handle different payment methods (credit cards, PayPal, etc.).
-Generate order invoices and receipts.
-Product Search and Filtering:
-
-Implement search functionality for products.
-Allow users to filter products based on categories, price ranges, and attributes.
-User Profiles:
-
-Allow users to view and update their profiles.
-Provide order history and status within the user profile.
-Reviews and Ratings:
-
-Enable users to leave reviews and ratings for products.
-Display average ratings for products.
-Security:
-
-Implement secure communication using HTTPS.
-Protect against common security threats, such as SQL injection and cross-site scripting (XSS).
-API Versioning:
+- Inventory Management:
+    - Track and manage product inventory levels.
+    - Set up notifications for low stock.
+    - Handle product variants, such as sizes and colors.
+- Order Management:
+    - Allow users to place orders.
+    - Retrieve order details, including items, quantities, and prices.
+    - Update order status (e.g., processing, shipped, delivered).
+    - Provide order history for users.
+- User Authentication and Authorization:
+    - Enable user registration and login.
+    - Implement secure authentication using Laravel Passport or a similar package.
+    - Authorize user actions based on roles and permissions.
+- Shopping Cart:
+    - Allow users to add products to a shopping cart.
+    - Adjust quantities and remove items from the cart.
+    - Calculate the total price and handle discounts.
+- Checkout Process:
+    - Provide a seamless and secure checkout process.
+    - Collect shipping and billing information.
+    - Handle different payment methods (credit cards, PayPal, etc.).
+    - Generate order invoices and receipts.
+- Product Search and Filtering:
+    - Implement search functionality for products.
+    - Allow users to filter products based on categories, price ranges, and attributes.
+- User Profiles:
+    - Allow users to view and update their profiles.
+    - Provide order history and status within the user profile.
+- Security:
+    - Implement secure communication using HTTPS.
+    - Protect against common security threats, such as SQL injection and cross-site scripting (XSS).
+<!-- API Versioning:
 
 Implement versioning to ensure backward compatibility as the API evolves.
 Documentation:
@@ -100,7 +89,7 @@ Social Media Integration:
 
 Enable users to share products on social media.
 Implement social media login options.
-Shipping Integration:
+Shipping Integration: -->
 
 Integrate with shipping providers for real-time shipping rates and tracking.
 
