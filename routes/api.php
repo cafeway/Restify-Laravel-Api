@@ -21,3 +21,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 
 Route::resource('products',ProductController::class);
+Route::post('/tokens/create',[ProductController::class,'ProductController@create/tokens']);
