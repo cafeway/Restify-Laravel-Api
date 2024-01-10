@@ -10,6 +10,7 @@
 
 ## RESTify Laravel API
 [![Node.js](https://img.shields.io/badge/Node.js-14.x-brightgreen)](https://nodejs.org/)
+[![PHP](https://img.shields.io/badge/PHP-7.x-blue)](https://www.php.net/)
 
 Welcome to my Laravel Restify API Hub project, a robust and developer-friendly e-commerce RESTful API built on the Laravel framework using the powerful Restify package. This API serves as the backbone for seamless integration of your applications with a focus on simplicity, flexibility, and performances.
 
