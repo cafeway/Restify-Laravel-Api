@@ -101,7 +101,7 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 
 1. clone the following repository https://github.com/the-karanja/Restify-Laravel-Api
 
-2. Run Composer install to install the specified dependancies in composer.json
+2. Run ```markdown```to install the specified dependancies in composer.json
 
 ## Laravel Sponsors
 
