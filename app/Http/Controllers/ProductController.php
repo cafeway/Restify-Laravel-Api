@@ -4,12 +4,30 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Product;
+use OpenApi\Annotations as OA;
+
+ /**
+      * @OA\Info(
+        * title="My first laravel api",
+        *version = "1.0"
+      *)
+      */
 class ProductController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display a listing of the products.
      *
      * @return \Illuminate\Http\Response
+     */
+
+    /**
+     * @OA\Get(
+     *      path="api/products",
+     *      @OA\Response(
+     *          response="200",
+     *          description="products Queued successfully"
+     *      )
+     * )
      */
     public function index()
     {
