@@ -1,5 +1,5 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="images/rest.jpg" width="400"></a></p>
 
+![Project Logo]({{ asset('images/rest.jpg') }})
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
@@ -11,6 +11,8 @@
 ## RESTify Laravel API
 [![Node.js](https://img.shields.io/badge/Node.js-14.x-brightgreen)](https://nodejs.org/)
 [![PHP](https://img.shields.io/badge/PHP-7.x-blue)](https://www.php.net/)
+
+
 
 Welcome to my Laravel Restify API Hub project, a robust and developer-friendly e-commerce RESTful API built on the Laravel framework using the powerful Restify package. This API serves as the backbone for seamless integration of your applications with a focus on simplicity, flexibility, and performances.
 
