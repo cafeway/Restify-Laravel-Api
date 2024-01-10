@@ -21,14 +21,14 @@ class ProductController extends Controller
      */
 
     /**
-     * @OA\Get(
-     *      path="api/products",
-     *      @OA\Response(
-     *          response="200",
-     *          description="products Queued successfully"
-     *      )
-     * )
-     */
+ * @OA\Get(
+ *     path="/api/products",
+ *     summary="Get a list of all products",
+ *     tags={"Users"},
+ *     @OA\Response(response=200, description="Successful operation"),
+ *     @OA\Response(response=400, description="Invalid request")
+ * )
+ */
     public function index()
     {
         //
