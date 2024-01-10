@@ -73,12 +73,20 @@ class ProductController extends Controller
  *          required=true,
  *          @OA\Schema(type="integer")
  *     ),
+ *     @OA\Parameter(
+ *          name="description",
+ *          in="query",
+ *          description="Description of the product",
+ *          required=true,
+ *          @OA\Schema(type="string")
+ *     ),
  *     @OA\RequestBody(
  *         required=true,
  *         @OA\JsonContent(
  *             type="object",
  *             @OA\Property(property="name", type="string"),
  *             @OA\Property(property="price", type="number"),
+ *             @OA\Property(property="description", type="string"),
  *         )
  *     ),
  *     @OA\Response(

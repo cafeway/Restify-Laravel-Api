@@ -27,10 +27,28 @@
                 "operationId": "createProduct",
                 "parameters": [
                     {
-                        "name": "category",
+                        "name": "name",
                         "in": "query",
-                        "description": "Category of the product",
-                        "required": false,
+                        "description": "Name of the product",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "price",
+                        "in": "query",
+                        "description": "price of the product",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "description",
+                        "in": "query",
+                        "description": "Description of the product",
+                        "required": true,
                         "schema": {
                             "type": "string"
                         }
@@ -47,6 +65,9 @@
                                     },
                                     "price": {
                                         "type": "number"
+                                    },
+                                    "description": {
+                                        "type": "string"
                                     }
                                 },
                                 "type": "object"
