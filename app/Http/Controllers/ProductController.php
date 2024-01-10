@@ -53,6 +53,55 @@ class ProductController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+    /**
+ * @OA\Post(
+ *     path="/api/products",
+ *     summary="Create a new product",
+ *     description="Create a new product with the provided data",
+ *     operationId="createProduct",
+ *     @OA\Parameter(
+ *         name="name",
+ *         in="query",
+ *         description="Name of the product",
+ *         required=true,
+ *         @OA\Schema(type="string")
+ *     ),
+ *     @OA\Parameter(
+ *          name="price",
+ *          in="query",
+ *          description="price of the product",
+ *          required=true,
+ *          @OA\Schema(type="integer")
+ *     ),
+ *     @OA\RequestBody(
+ *         required=true,
+ *         @OA\JsonContent(
+ *             type="object",
+ *             @OA\Property(property="name", type="string"),
+ *             @OA\Property(property="price", type="number"),
+ *         )
+ *     ),
+ *     @OA\Response(
+ *         response=201,
+ *         description="Product created successfully",
+ *         @OA\JsonContent(
+ *             type="object",
+ *             @OA\Property(property="id", type="integer"),
+ *             @OA\Property(property="name", type="string"),
+ *             @OA\Property(property="price", type="number"),
+
+ *         )
+ *     ),
+ *     @OA\Response(
+ *         response=422,
+ *         description="Validation error or other client-side error",
+ *         @OA\JsonContent(
+ *             type="object",
+ *             @OA\Property(property="error", type="string")
+ *         )
+ *     )
+ * )
+ */
     public function store(Request $request)
     {
         //
