@@ -101,7 +101,7 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 
 1. clone the following repository https://github.com/cafeway/Restify-Laravel-Api
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+2. Run Composer install to install the specified dependancies in composer.json
 
 ## Laravel Sponsors
 
