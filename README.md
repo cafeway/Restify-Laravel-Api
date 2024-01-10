@@ -99,7 +99,7 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 
 ## Getting started
 
-1. clone the following repository https://github.com/cafeway/Restify-Laravel-Api
+1. clone the following repository https://github.com/the-karanja/Restify-Laravel-Api
 
 2. Run Composer install to install the specified dependancies in composer.json
 
