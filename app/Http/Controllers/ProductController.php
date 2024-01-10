@@ -83,4 +83,16 @@ class ProductController extends Controller
     {
         //
     }
+
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function generateToken (Request $request) {
+        $token = $request->user()->createToken($request->token_name);
+
+        return  $token->plainTextToken;
+    }
 }
