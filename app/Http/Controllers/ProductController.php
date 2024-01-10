@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Product;
+use Database\Seeders\ProductSeeder;
 use OpenApi\Annotations as OA;
 
  /**
@@ -24,7 +25,7 @@ class ProductController extends Controller
  * @OA\Get(
  *     path="/api/products",
  *     summary="Get a list of all products",
- *     tags={"Users"},
+ *     tags={"Products"},
  *     @OA\Response(response=200, description="Successful operation"),
  *     @OA\Response(response=400, description="Invalid request")
  * )
@@ -63,9 +64,49 @@ class ProductController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+       /**
+ * @OA\Get(
+ *     path="/api/products/{id}",
+ *     summary="Get a product by ID",
+ *     tags={"Products"},
+ *     description="Retrieve a product based on its ID",
+ *     operationId="getProductById",
+ *     @OA\Parameter(
+ *         name="id",
+ *         in="path",
+ *         description="ID of the product",
+ *         required=true,
+ *         @OA\Schema(type="integer")
+ *     ),
+ *     @OA\Response(
+ *         response=200,
+ *         description="Successful operation",
+ *         @OA\JsonContent(
+ *             type="object",
+ *             @OA\Property(property="id", type="integer"),
+ *             @OA\Property(property="name", type="string"),
+ *
+ *         )
+ *     ),
+ *     @OA\Response(
+ *         response=404,
+ *         description="Product not found",
+ *         @OA\JsonContent(
+ *             type="object",
+ *             @OA\Property(property="error", type="string")
+ *         )
+ *     )
+ * )
+ */
+     public function show($id)
     {
-        //
+        //get the product by id
+        $product = Product::find($id);
+        if (!$product) {
+            return response()->json(['error' => 'Product not found'], 404);
+        }
+
+        return response()->json($product);
     }
 
     /**
