@@ -56,6 +56,7 @@ class ProductController extends Controller
     /**
  * @OA\Post(
  *     path="/api/products",
+ *     tags={"Products"},
  *     summary="Create a new product",
  *     description="Create a new product with the provided data",
  *     operationId="createProduct",
